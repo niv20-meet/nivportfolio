@@ -6,7 +6,7 @@ app = Flask(__name__)
 app.secret_key = "MY_SUPER_SECRET_KEY"
 
 
-@app.route('/index')
+@app.route('/')
 def home_page():
 	return render_template("index.html")
 
